@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>StyleWave - Clothing Brands</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            padding: 18px;
+            color: white;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .nav h1 {
+            margin: 0;
+        }
+
+        .nav a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Hero Section (Reduced Size) */
+        .hero {
+            text-align: center;
+            padding: 30px 20px;
+            /* reduced padding */
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 26px;
+            /* reduced font size */
+            margin-bottom: 5px;
+        }
+
+        .hero p {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        /* Brands Section */
+        .brands {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .brands h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .brand-card {
+            background: linear-gradient(135deg, #ffffff, #f1f1f1);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .brand-card h3 {
+            color: #ff416c;
+            margin-bottom: 10px;
+        }
+
+        .brand-card p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .brand-card button {
+            margin-top: 15px;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav">
+            <h1>StyleWave</h1>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Brands</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero (Smaller) -->
+    <section class="hero">
+        <h2>Color Your Style</h2>
+        <p>Explore vibrant fashion from top clothing brands</p>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+        <h2>Popular Clothing Brands</h2>
+
+        <div class="brand-grid">
+            <div class="brand-card">
+                <h3>Adidas</h3>
+                <p>Iconic designs with everyday comfort.</p>
+                <button>Shop Adidas</button>
+            </div>
+
+            <div class="brand-card">
+                <h3>Zara</h3>
+                <p>Trendy styles inspired by global fashion.</p>
+                <button>Shop Zara</button>
+            </div>
+
+            <div class="brand-card">
+                <h3>H&M</h3>
+                <p>Affordable fashion for all seasons.</p>
+                <button>Shop H&M</button>
+            </div>
+
+            <div class="brand-card">
+                <h3>Puma</h3>
+                <p>Energetic fashion with athletic vibes.</p>
+                <button>Shop Puma</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 StyleWave | Fashion that Speaks Color</p>
+    </footer>
+
+</body>
+
+</html>
